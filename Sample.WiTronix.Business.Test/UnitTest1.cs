@@ -35,5 +35,13 @@ namespace Sample.WiTronix.Business.Test
 
             Assert.AreEqual(5, cB.Sub(value1, value2));
         }
+        [TestMethod]
+        public void Multiply_Test_Method()
+        {
+            CaluclateBusiness cB = new CaluclateBusiness();
+            int value1 = 10;
+            int value2 = 5;
+            Assert.AreEqual(50, cB.Multiply(value1, value2));
+        }
     }
 }
